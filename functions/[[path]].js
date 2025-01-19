@@ -33,7 +33,7 @@ export async function onRequest(context) {
         }
 
         // 添加安全设置参数，将所有安全类别设置为无阻塞
-        newBody.safetySettings = [
+/*         newBody.safetySettings = [
             {
                 category: 'HARM_CATEGORY_SEXUALLY_EXPLICIT',
                 threshold: 'BLOCK_NONE'
@@ -54,7 +54,7 @@ export async function onRequest(context) {
                 category: 'HARM_CATEGORY_CIVIC_INTEGRITY',
                 threshold: 'BLOCK_NONE'
             }
-        ];
+        ]; */
 
         // 创建新的请求对象，包括修改后的 URL、请求头、请求方法和请求体
         const modifiedRequest = new Request(url.toString(), {
